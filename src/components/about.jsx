@@ -1,34 +1,62 @@
 import React from "react";
 import "../about.css";
+import html from "../img/skills/html.png";
+import css from "../img/skills/css.png";
+import js from "../img/skills/js.png";
+import react from "../img/skills/react.png";
+import arduino from "../img/skills/arduino.png";
+import cpp from "../img/skills/c++.png";
+import cv from "../img/skills/cv.png";
+import dj from "../img/skills/dj.png";
+import flask from "../img/skills/flask.png";
+import java from "../img/skills/java.png";
+import redux from "../img/skills/redux.png";
+import robo from "../img/skills/robo.png";
+import sql from "../img/skills/sql.png";
+import python from "../img/skills/python.png";
 
 class About extends React.Component {
   constructor() {
     super();
     this.state = {
       skills: [
-        { id: "1", content: "HTML5" },
-        { id: "2", content: "CSS3" },
+        { id: "1", content: "HTML5", image: html },
+        { id: "2", content: "CSS3", image: css },
         {
           id: "3",
           content: "JavaScript",
+          image: js,
         },
-        { id: "4", content: "PHP" },
+        { id: "9", content: "ReactJS", image: react },
+        { id: "10", content: "Redux", image: redux },
+        // { id: "16", content: "React Native", image: html },
+
+        { id: "11", content: "Django", image: dj },
+        { id: "12", content: "Flask", image: flask },
+        { id: "15", content: "SQL", image: sql },
         {
           id: "5",
-          content: "ReactJS",
+          content: "Python",
+          image: python,
         },
+        { id: "16", content: "Open CV", image: cv },
+
         {
           id: "6",
-          content: "Python",
+          content: "C/C++",
+          image: cpp,
         },
         {
           id: "7",
-          content: "VanillaJS",
+          content: "Java",
+          image: java,
         },
         {
           id: "8",
-          content: "Wordpress",
+          content: "Arduino",
+          image: arduino,
         },
+        { id: "14", content: "Robotics", image: robo },
       ],
       about_me: [
         {
@@ -76,11 +104,7 @@ class About extends React.Component {
                           <p className="location-title">{skill.content}</p>
                           <div className="location-image">
                             <a>
-                              <img
-                                width="100"
-                                height="100"
-                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/san-fransisco-768x432.jpg"
-                              />
+                              <img width="100" height="100" src={skill.image} />
                             </a>
                           </div>
                         </article>
