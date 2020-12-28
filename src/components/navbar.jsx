@@ -1,7 +1,7 @@
 import React from "react";
 import $ from "jquery";
 
-import logo1 from "../img/photo.jpg";
+import logo1 from "../img/main.jpeg";
 import logo2 from "../img/small.jpg";
 
 class Navbar extends React.Component {
@@ -90,7 +90,7 @@ class Navbar extends React.Component {
             <img
               src={this.state.logo}
               alt="logo"
-              style={{ maxWidth: "100px" }}
+              style={{ maxWidth: "50px" }}
             />
           </a>
           <button
