@@ -14,30 +14,30 @@ class Intro extends React.Component {
         <div className="intro-content display-table">
           <div className="table-cell">
             <div className="container">
-              <h1 className="intro-title mb-4">Hello, I am XYZ</h1>
+              <h1 className="intro-title mb-4">Hello, I am Shvejan</h1>
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
                   <Typed
                     strings={[
-                      "Front End Developer",
-                      "Back End Developer",
-                      "Software Engineer"
+                      "App Developer",
+                      "Full Stack Developer",
+                      "Robotics Enthusiast",
                     ]}
-                    typeSpeed={80}
+                    typeSpeed={60}
                     backDelay={1100}
-                    backSpeed={30}
+                    backSpeed={20}
                     loop
                   />
                 </strong>
               </p>
               <p className="pt-3">
                 <a
-                  className="btn btn-primary btn js-scroll px-4"
+                  className="btn btn-success btn js-scroll px-4"
                   href="#work"
                   role="button"
                 >
-                  View My Work
+                  Explore!
                 </a>
               </p>
             </div>
