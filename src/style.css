@@ -699,6 +699,7 @@ PORTFOLIO
 .work-img {
   display: block;
   overflow: hidden;
+  height: 300px;
 }
 
 .work-img img {
