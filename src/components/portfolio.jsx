@@ -71,8 +71,8 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="row">
-            {this.state.projects.map((project) => (
-              <div className="col-md-4">
+            {this.state.projects.map((project, index) => (
+              <div className="col-md-4" key={index}>
                 <div className="work-box">
                   <a href={project.pics[0]} data-lightbox="gallery-vmarine">
                     <div className="work-img">
@@ -98,6 +98,7 @@ class Portfolio extends React.Component {
                     (pic, index) =>
                       index > 0 && (
                         <a
+                          key={index}
                           href={pic}
                           data-lightbox="gallery-vmarine"
                           style={{ display: "none" }}

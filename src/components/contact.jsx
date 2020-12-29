@@ -15,7 +15,7 @@ class Contact extends React.Component {
               <div className="contact-mf">
                 <div id="contact" className="box-shadow-full">
                   <div className="row">
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6">
                       <div className="title-box-2">
                         <h5 className="title-left">Send A Message</h5>
                       </div>
@@ -96,41 +96,47 @@ class Contact extends React.Component {
                           </div>
                         </form>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="col-md-6">
                       <div className="title-box-2 pt-4 pt-md-0">
                         <h5 className="title-left">Get in Touch</h5>
                       </div>
                       <div className="more-info">
                         <p className="lead">
-                          Whether you want to get in touch, talk about a project
-                          collaboration, or just say hi, I'd love to hear from
-                          you.
-                          <br />
-                          Simply fill the from and send me an email.
+                          I would love to hear it form you! <br /> drop a
+                          message or comment on my projects!
                         </p>
-                        {/* <!-- <ul class="list-ico">
-                                <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
-                                <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
-                                <li><span class="ion-email"></span> contact@example.com</li>
-                                </ul> --> */}
+                        <ul className="list-ico">
+                          <li>
+                            <span className="ion-ios-location"></span> Boduppal,
+                            Hyderabad 500092
+                          </li>
+                          <li>
+                            <span className="ion-ios-telephone"></span> +91 9573
+                            749 395
+                          </li>
+                          <li>
+                            <span className="ion-email"></span>{" "}
+                            shvejan2011@gmail.com
+                          </li>
+                        </ul>
                       </div>
                       <div className="socials">
                         <ul>
                           <li>
                             <a
-                              href=""
+                              href="https://www.instagram.com/shvejan_556/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               <span className="ico-circle">
-                                <i className="ion-social-codepen"></i>
+                                <i className="ion-social-instagram"></i>
                               </span>
                             </a>
                           </li>
                           <li>
                             <a
-                              href=""
+                              href="https://github.com/shvejan"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -141,12 +147,23 @@ class Contact extends React.Component {
                           </li>
                           <li>
                             <a
-                              href=""
+                              href="https://www.linkedin.com/in/shvejan-shashank-a59594181"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               <span className="ico-circle">
                                 <i className="ion-social-linkedin"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://twitter.com/shvejanshashank"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span className="ico-circle">
+                                <i className="ion-social-twitter"></i>
                               </span>
                             </a>
                           </li>
@@ -163,8 +180,7 @@ class Contact extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-sm-12">
-                <div className="copyright-box">
-                </div>
+                <div className="copyright-box"></div>
               </div>
             </div>
           </div>
