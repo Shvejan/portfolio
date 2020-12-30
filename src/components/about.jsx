@@ -61,7 +61,8 @@ class About extends React.Component {
       about_me: [
         {
           id: "first-p-about",
-          content: "i am engineerrrrrrrr!!!!!",
+          content:
+            "I'm a enthusiastic self taught full stack web and cross platform mobile app developer eager to contribute to team success through hard work, attention to detail and excellent organizational skills. Motivated to learn, grow and excel in industry. I have been working on various projects in the field of Web development for the past 2 years. I'm a quick learner and love to collaborate and work with teams.",
         },
         // {
         //   id: "second-p-about",
