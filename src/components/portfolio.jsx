@@ -1,5 +1,5 @@
 import React from "react";
-import "../portfolio.css";
+import "../portfolio.scss";
 import Zoom from "react-reveal/Zoom";
 
 import rest1 from "../img/restaurent/home.png";
@@ -64,9 +64,9 @@ class Portfolio extends React.Component {
       <section id="work" className="portfolio-mf sect-pt4 route workCards">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12">
+            <div className="col-sm-12 ">
               <div className="title-box text-center">
-                <h3 className="title-a">Portfolio</h3>
+                <h1 className="title-a">Projects</h1>
                 <p className="subtitle-a">Some of my cool projects!</p>
                 <div className="line-mf"></div>
               </div>
