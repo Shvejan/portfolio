@@ -22,7 +22,7 @@ h2 {
 }
 
 .location-image img {
-  filter: blur(0px);
+  filter: blur(5px);
   transition: filter 0.3s ease-in;
   transform: scale(1.1);
 }
@@ -39,7 +39,7 @@ h2 {
   left: 0;
   opacity: 1;
   transition: opacity 0.5s;
-  background: rgba(90, 0, 10, 0.4);
+  background: rgba(21, 0, 90, 0.4);
   color: white;
 
   /* position the text in t’ middle*/
@@ -53,7 +53,7 @@ h2 {
 }
 
 .location-listing:hover .location-image img {
-  /* filter: blur(2px); */
+  filter: blur(0px);
 }
 
 /* for touch screen devices */
