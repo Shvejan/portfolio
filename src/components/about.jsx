@@ -14,7 +14,8 @@ import redux from "../img/skills/redux.png";
 import robo from "../img/skills/robo.png";
 import sql from "../img/skills/sql.png";
 import python from "../img/skills/python.png";
-
+import Slide from "react-reveal/Slide";
+import Bounce from "react-reveal/Bounce";
 class About extends React.Component {
   constructor() {
     super();
@@ -84,30 +85,45 @@ class About extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <div className="box-shadow-full">
-                <div className="about-me pt-4 pt-md-0">
-                  <h2>About Me</h2>
-                  {this.state.about_me.map((content) => {
-                    return (
-                      <p className="lead" key={content.id}>
-                        {content.content}
-                      </p>
-                    );
-                  })}
-                </div>
+              <div
+                className="box-shadow-full"
+                style={{ backgroundColor: "#fdb827" }}
+              >
+                <Slide top>
+                  <div className="about-me pt-4 pt-md-0">
+                    <h1 style={{ color: "black" }}>About Me</h1>
+                    {this.state.about_me.map((content) => {
+                      return (
+                        <p className="lead" key={content.id}>
+                          {content.content}
+                        </p>
+                      );
+                    })}
+                  </div>
+                </Slide>
+                <br />
+                <br />
+                <br />
+                <br />
                 <div className="child-page-listing">
                   <h2>Skills</h2>
                   <div className="grid-container">
                     {this.state.skills.map((skill) => {
                       return (
-                        <article key={skill.id} className="location-listing">
-                          <p className="location-title">{skill.content}</p>
-                          <div className="location-image">
-                            <a>
-                              <img width="100" height="100" src={skill.image} />
-                            </a>
-                          </div>
-                        </article>
+                        <Bounce bottom>
+                          <article key={skill.id} className="location-listing">
+                            <p className="location-title">{skill.content}</p>
+                            <div className="location-image">
+                              <a>
+                                <img
+                                  width="100"
+                                  height="100"
+                                  src={skill.image}
+                                />
+                              </a>
+                            </div>
+                          </article>
+                        </Bounce>
                       );
                     })}
 

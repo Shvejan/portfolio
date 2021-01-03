@@ -716,12 +716,12 @@ PORTFOLIO
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  color: #f1ff74;
 }
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: #f1ff74;
   float: right;
 }
 
@@ -735,6 +735,7 @@ PORTFOLIO
 
 .w-title {
   font-size: 1.2rem;
+  color: rgb(255, 255, 255);
 }
 
 /*

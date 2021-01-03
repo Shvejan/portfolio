@@ -1,4 +1,6 @@
 import React from "react";
+import "../portfolio.css";
+import Zoom from "react-reveal/Zoom";
 
 import rest1 from "../img/restaurent/home.png";
 import rest2 from "../img/restaurent/menu.png";
@@ -59,7 +61,7 @@ class Portfolio extends React.Component {
   }
   render() {
     return (
-      <section id="work" className="portfolio-mf sect-pt4 route">
+      <section id="work" className="portfolio-mf sect-pt4 route workCards">
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
@@ -72,43 +74,52 @@ class Portfolio extends React.Component {
           </div>
           <div className="row">
             {this.state.projects.map((project, index) => (
-              <div className="col-md-4" key={index}>
-                <div className="work-box">
-                  <a href={project.pics[0]} data-lightbox="gallery-vmarine">
-                    <div className="work-img">
-                      <img src={project.pics[0]} alt="" className="img-fluid" />
-                    </div>
-                    <div className="work-content">
-                      <div className="row">
-                        <div className="col-sm-8">
-                          <h2 className="w-title">{project.title}</h2>
-                          <div className="w-more">
-                            <span className="w-ctegory">{project.desc}</span>
+              <Zoom top>
+                <div className="col-md-4" key={index}>
+                  <div className="work-box">
+                    <a href={project.pics[0]} data-lightbox="gallery-vmarine">
+                      <div className="work-img">
+                        <img
+                          src={project.pics[0]}
+                          alt=""
+                          className="img-fluid"
+                        />
+                      </div>
+                      <div
+                        className="work-content"
+                        style={{ backgroundColor: "#0E131B" }}
+                      >
+                        <div className="row">
+                          <div className="col-sm-8">
+                            <h2 className="w-title">{project.title}</h2>
+                            <div className="w-more">
+                              <span className="w-ctegory">{project.desc}</span>
+                            </div>
                           </div>
-                        </div>
-                        <div className="col-sm-4">
-                          <div className="w-like">
-                            <span className="ion-ios-plus-outline"></span>
+                          <div className="col-sm-4">
+                            <div className="w-like">
+                              <span className="ion-ios-plus-outline"></span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                  {project.pics.map(
-                    (pic, index) =>
-                      index > 0 && (
-                        <a
-                          key={index}
-                          href={pic}
-                          data-lightbox="gallery-vmarine"
-                          style={{ display: "none" }}
-                        >
-                          jsx-a11y/anchor-has-content warning
-                        </a>
-                      )
-                  )}
+                    </a>
+                    {project.pics.map(
+                      (pic, index) =>
+                        index > 0 && (
+                          <a
+                            key={index}
+                            href={pic}
+                            data-lightbox="gallery-vmarine"
+                            style={{ display: "none" }}
+                          >
+                            jsx-a11y/anchor-has-content warning
+                          </a>
+                        )
+                    )}
+                  </div>
                 </div>
-              </div>
+              </Zoom>
             ))}
           </div>
         </div>
