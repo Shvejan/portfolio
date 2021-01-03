@@ -27,7 +27,6 @@ import Portfolio from "./components/portfolio.jsx";
 import Contact from "./components/contact.jsx";
 import BackToTop from "./components/back-top.jsx";
 import Preloader from "./components/preloader";
-import MacBookPro4 from "./ux";
 
 ReactDOM.render(
   <React.Fragment>
