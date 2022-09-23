@@ -55,8 +55,7 @@ export const NavBar = () => {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="https://blog.nodex.codes"
-                target="_blank"
+                href="#about"
                 className={
                   activeLink === "about" ? "active navbar-link" : "navbar-link"
                 }
@@ -65,18 +64,7 @@ export const NavBar = () => {
                 About
               </Nav.Link>
               <Nav.Link
-                href="https://stake.nodex.codes"
-                target="_blank"
-                className={
-                  activeLink === "work" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("work")}
-              >
-                Work
-              </Nav.Link>
-              <Nav.Link
-                href="https://explorer.nodex.codes"
-                target="_blank"
+                href="#skills"
                 className={
                   activeLink === "skills" ? "active navbar-link" : "navbar-link"
                 }
@@ -85,8 +73,17 @@ export const NavBar = () => {
                 Skills
               </Nav.Link>
               <Nav.Link
-                href="https://jumper.nodex.codes"
-                target="_blank"
+                href="#work"
+                className={
+                  activeLink === "work" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("work")}
+              >
+                Work
+              </Nav.Link>
+
+              <Nav.Link
+                href="#projects"
                 className={
                   activeLink === "projects"
                     ? "active navbar-link"
@@ -121,14 +118,14 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a
                   href="https://github.com/nodesxploit/testnet"
-                  target="_blank"
+                  
                 >
                   <img src={navIcon2} alt="Github" />
                 </a>
-                <a href="https://twitter.com/nodexploit" target="_blank">
+                <a href="https://twitter.com/nodexploit" >
                   <img src={navIcon1} alt="Twitter" />
                 </a>
-                <a href="https://youtube.com" target="_blank">
+                <a href="https://youtube.com" >
                   <img src={navIcon4} alt="Youtube" />
                 </a>
               </div>

@@ -1,45 +1,73 @@
-import React from 'react';
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import React from "react";
+import { Container, Row, Col, Tab } from "react-bootstrap";
+import rest1 from "../assets/img/projects/restaurent/home.png";
+import rest2 from "../assets/img/projects/restaurent/menu.png";
+import rest3 from "../assets/img/projects/restaurent/about.png";
+import rest4 from "../assets/img/projects/restaurent/contact.png";
+
+import shop1 from "../assets/img/projects/shop/home.png";
+import shop2 from "../assets/img/projects/shop/cart.png";
+
+import land21 from "../assets/img/projects/hws/home.png";
+import land22 from "../assets/img/projects/hws/career.png";
+import land23 from "../assets/img/projects/hws/services.png";
+
+import covid1 from "../assets/img/projects/covid/home.png";
+import covid2 from "../assets/img/projects/covid/page1.png";
+import keplerImage from "../assets/img/projects/kepler/kepler.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Landing Page",
+      desc: "HTML CSS ReactJS Redux",
+      pics: [land21, land22, land23],
+      link: "https://hwsaver.com/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Online Shpoing Site",
+      desc: "HTML CSS ReactJS Redux",
+      pics: [shop1, shop2],
+      link: "",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Restaurent Website!",
+      desc: "HTML CSS ReactJS Redux",
+      pics: [rest1, rest2, rest3, rest4],
+      link: "",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Covid19 Tracker ",
+      desc: "ReactJS Redux CSS",
+      pics: [covid1, covid2],
+      link: "",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "3D Video game",
+      desc: "Unreal Engine C++",
+      pics: [keplerImage],
+      link: "",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Smart Assistant Robot",
+      desc: "Arduino C++ Image Processing",
+      pics: [keplerImage],
+      link: "",
+    },
+    {
+      title: "Behaviour Cloning for Self Driving Cars",
+      desc: "Deep Learning Python OpenCv",
+      pics: [keplerImage],
+      link: "",
+    },
+    {
+      title: "Klen-The smart tag",
+      desc: "IoT Arduion Google Firebase",
+      pics: [keplerImage],
+      link: "",
     },
   ];
 
@@ -49,51 +77,45 @@ export const Projects = () => {
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+              {({ isVisible }) => (
+                <div>
+                  <h2>Projects</h2>
+                  <p>Here are some of my cool projects</p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Tab.Content id="slideInUp">
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {projects.map((project, index) => (
+                            <Col className="col-md-3" key={index}>
+                              <a href={project.link} target="_blank">
+                                <div className="project-card">
+                                  <img
+                                    src={project.pics[0]}
+                                    className="project-img"
+                                  />
+                                  <div className="card-content">
+                                    <h5 className="project-title">
+                                      {project.title}
+                                    </h5>
+                                    <h4 className="project-desc">
+                                      {project.desc}
+                                    </h4>
+                                  </div>
+                                </div>
+                              </a>
+                            </Col>
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
-  )
-}
+  );
+};
