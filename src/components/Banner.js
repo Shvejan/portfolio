@@ -6,6 +6,13 @@ import { ArrowRightCircle, Quote } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import Typed from "react-typed";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faInstagram,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -95,6 +102,65 @@ export const Banner = () => {
                       backSpeed={20}
                       loop
                     />
+                    <div className="social-icons">
+                      <span>
+                        <a
+                          href="https://www.linkedin.com/in/shvejan-shashank-a59594181"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon
+                            icon={faLinkedin}
+                            size="2x"
+                            className="social-icon"
+                          />
+                        </a>
+                        <a
+                          href="https://github.com/shvejan"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon
+                            icon={faGithub}
+                            size="2x"
+                            className="social-icon"
+                          />
+                        </a>
+                        <a
+                          href="https://www.instagram.com/shvejan_556/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon
+                            icon={faInstagram}
+                            size="2x"
+                            className="social-icon"
+                          />
+                        </a>
+                        <a
+                          href="mailto:shvejan2011@gmail.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon
+                            icon={faEnvelope}
+                            size="2x"
+                            className="social-icon"
+                          />
+                        </a>
+                        <a
+                          href="tel:+19293661517"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FontAwesomeIcon
+                            icon={faPhone}
+                            size="2x"
+                            className="social-icon"
+                          />
+                        </a>
+                      </span>
+                    </div>
                     <br></br>
                     <br></br>
                     <i>
@@ -111,15 +177,16 @@ export const Banner = () => {
                     </i>
 
                     <div className="education">
-                      <h2>Education</h2>
+                      <h2 className="header">Education</h2>
                       {education.map((edu, i) => (
-                        <div key={i}>
+                        <div key={i} className="school-data">
                           <Row>
                             <Col>{edu.school}</Col>
-                            <Col>{edu.duration}</Col>
+                            <Col className="secondary">{edu.duration}</Col>
                           </Row>
-                          <text>{edu.degree}</text>
-                          <text>{edu.gpa}</text>
+                          <i>{edu.degree}</i>
+                          <br />
+                          <strong>{edu.gpa}</strong>
                         </div>
                       ))}
                     </div>

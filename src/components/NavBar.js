@@ -1,13 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/twitter.svg";
-import navIcon2 from "../assets/img/github.svg";
-import navIcon3 from "../assets/img/discord.svg";
-import navIcon4 from "../assets/img/youtube.svg";
-import { HashLink } from "react-router-hash-link";
-
+import resumePdf from "../assets/pdfFiles/ShvejanResume.pdf";
 import headerImg from "../assets/img/dp.JPG";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -94,7 +88,7 @@ export const NavBar = () => {
                 Projects
               </Nav.Link>
               <Nav.Link
-                href="#testnet"
+                href="#contact"
                 className={
                   activeLink === "contact"
                     ? "active navbar-link"
@@ -105,7 +99,8 @@ export const NavBar = () => {
                 Contact
               </Nav.Link>
               <Nav.Link
-                href="#team"
+                href={resumePdf}
+                target="_blank"
                 className={
                   activeLink === "resume" ? "active navbar-link" : "navbar-link"
                 }
