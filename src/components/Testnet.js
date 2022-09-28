@@ -17,6 +17,7 @@ import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 import Slide from "react-reveal/Slide";
 import Bounce from "react-reveal/Bounce";
+import unreal from "../assets/img/skills/unreal.png";
 <script async defer src="https://buttons.github.io/buttons.js"></script>;
 
 export const Testnet = () => {
@@ -49,7 +50,7 @@ export const Testnet = () => {
     },
     { id: "9", content: "ReactJS", image: react },
     { id: "10", content: "Redux", image: redux },
-    // { id: "16", content: "React Native", image: html },
+    { id: "16", content: "React Native", image: react },
 
     { id: "11", content: "Django", image: dj },
     { id: "12", content: "Flask", image: flask },
@@ -77,6 +78,7 @@ export const Testnet = () => {
       image: arduino,
     },
     { id: "14", content: "Robotics", image: robo },
+    { id: "17", content: "Unreal Engine", image: unreal },
   ];
 
   return (

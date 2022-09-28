@@ -16,11 +16,23 @@ import covid1 from "../assets/img/projects/covid/home.png";
 import covid2 from "../assets/img/projects/covid/page1.png";
 import keplerImage from "../assets/img/projects/kepler/kepler.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import klenTag from "../assets/img/projects/klen/klen-tag.jpeg";
+import visionTransformer from "../assets/img/projects/vision-transformers/vision-transformers.jpeg";
+import casa from "../assets/img/projects/casa/casa.jpg";
+
+import habitApp from "../assets/img/projects/habitApp/habit-app.jpg";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects = [
+    {
+      title: "Habit Builder App",
+      desc: "ReactNative Firebase",
+      pics: [habitApp],
+      link: "https://github.com/Shvejan/habit-tracker",
+    },
     {
       title: "Landing Page",
       desc: "HTML CSS ReactJS Redux",
@@ -37,37 +49,37 @@ export const Projects = () => {
       title: "Restaurent Website!",
       desc: "HTML CSS ReactJS Redux",
       pics: [rest1, rest2, rest3, rest4],
-      link: "",
+      link: "https://shvejan.github.io/Restaurent-react-app/",
     },
     {
       title: "Covid19 Tracker ",
       desc: "ReactJS Redux CSS",
       pics: [covid1, covid2],
-      link: "",
+      link: "https://shvejan.github.io/covid-19-tracker/",
     },
     {
       title: "3D Video game",
       desc: "Unreal Engine C++",
       pics: [keplerImage],
-      link: "",
+      link: "https://www.youtube.com/watch?v=n-eEt-vpYhI",
     },
     {
       title: "Smart Assistant Robot",
       desc: "Arduino C++ Image Processing",
-      pics: [keplerImage],
-      link: "",
+      pics: [casa],
+      link: "https://drive.google.com/file/d/1TkLyPscdbcQNvwmBdIkqcSj8vAGDzrIs/view?usp=sharing",
     },
     {
       title: "Behaviour Cloning for Self Driving Cars",
       desc: "Deep Learning Python OpenCv",
-      pics: [keplerImage],
-      link: "",
+      pics: [visionTransformer],
+      link: "https://ijisrt.com/assets/upload/files/IJISRT21DEC025.pdf",
     },
     {
       title: "Klen-The smart tag",
       desc: "IoT Arduion Google Firebase",
-      pics: [keplerImage],
-      link: "",
+      pics: [klenTag],
+      link: "https://drive.google.com/file/d/12hb86OY-efAqRFNBFBQojYb_Aw0Ar2Bt/view?usp=sharing",
     },
   ];
 
