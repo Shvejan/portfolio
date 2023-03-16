@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import resumePdf from "../assets/pdfFiles/ShvejanResume.pdf";
+import resumePdf from "../assets/pdfFiles/Shvejan_resume_fair.pdf";
 import headerImg from "../assets/img/dp.JPG";
 import { BrowserRouter as Router } from "react-router-dom";
 

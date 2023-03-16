@@ -165,14 +165,17 @@ export const Banner = () => {
                     <br></br>
                     <i>
                       <q>
-                        I'm a enthusiastic self taught full stack web and cross
-                        platform mobile app developer eager to contribute to
-                        team success through hard work, attention to detail and
+                        Passionate software developer with 2 years of internship
+                        expereince in full stack web and cross platform mobile
+                        app developer.Skilled in React, Django, AWS, Python,
+                        Javascript with a strong understanding of software
+                        development life cycle eager to contribute to team
+                        success through hard work, attention to detail and
                         excellent organizational skills. Motivated to learn,
-                        grow and excel in industry. I have been working on
-                        various projects and internships in the field of Web
-                        development for the past 4 years. I'm a quick learner
-                        and love to collaborate and work with teams.
+                        grow and excel in industry. Excited to bring my
+                        technical skills and enthusiasm for problem-solving to a
+                        dynamic team and contribute to building innovative and
+                        user-friendly products.
                       </q>
                     </i>
 

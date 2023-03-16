@@ -43,7 +43,7 @@ export const Projects = () => {
       title: "Online Shpoing Site",
       desc: "HTML CSS ReactJS Redux",
       pics: [shop1, shop2],
-      link: "",
+      link: "https://github.com/Shvejan/starQuik-website",
     },
     {
       title: "Restaurent Website!",
