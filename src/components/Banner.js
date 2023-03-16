@@ -28,13 +28,13 @@ export const Banner = () => {
       school: "New York University, New York, USA",
       degree: "Master of Science, Computer Engineering",
       duration: " Sep 2022 - June 2024",
-      gpa: "",
+      gpa: "GPA: 4.0 / 4.0",
     },
     {
       school: "Sreenidhi Institute of Science and Technology, Hyderabad, India",
       degree: "Bachelor of Technology, Computer Science & Engineering ",
       duration: "Aug 2018 - July 2022",
-      gpa: "Overall GPA: 3.5",
+      gpa: "GPA: 3.6 / 4.0",
     },
   ];
   useEffect(() => {
@@ -186,7 +186,7 @@ export const Banner = () => {
                           </Row>
                           <i>{edu.degree}</i>
                           <br />
-                          <strong>{edu.gpa}</strong>
+                          <strong style={{ color: "yellow" }}>{edu.gpa}</strong>
                         </div>
                       ))}
                     </div>

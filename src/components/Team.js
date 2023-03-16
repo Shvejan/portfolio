@@ -9,13 +9,27 @@ export const Team = () => {
   const work = {
     internships: [
       {
+        title: "Full Stack Web Developer Intern",
+        company: "NYU IT",
+        duration: "January 2023 - present",
+        description: [
+          "Currently developing a cutting-edge Business Intelligence platform for NYU",
+          "Designed and implemented complex AWS Lambda functions to extract data from multiple university data sources, including Oracle UDW+ and Workday.",
+          "Developed robust RESTful APIs using API Gateway to ensure seamless data access.",
+          "Demonstrated a deep understanding of the complete software development lifecycle, collaborating closely with cross-functional teams to drive the development process, from ideation to deployment, and employed best-in-class DevOps tools in AWS to ensure code quality and rapid release.",
+          "Significantly enhanced the user experience of the website by redesigning the website to make it responsiveness and mobile-friendy. Additionally, implemented some architectural improvements to drive performance and scalability gains in the codebase.",
+        ],
+      },
+      {
         title: "Full Stack Web Developer (Project Lead)",
         company: "HWSaver LLP",
         duration: "June 2020 - March 2022",
         description: [
-          "Used React Js on the front end and Django on the backend of the website",
-          "Built an NLP-based educational website for students to get their doubts cleared.",
-          "Worked as a Project Lead and led a team of 10 interns",
+          "Worked as a Project Lead and led a team of 10 interns working on a machine learning-based full-stack web application",
+          "Leveraged a deep understanding of React to create highly maintainable, well-tested, accessible, and well-documented React components, enabling seamless integration and future-proofing of the codebase.",
+          "Reviewed, merged pull requests, and provided feedback to the team members",
+          "Developed middleware including access control and login systems for authenticated users on the backend using Django, Python",
+          "Leveraged a deep understanding of React to create highly maintainable, well-tested, accessible, and well-documented React components, enabling seamless integration and future-proofing of the codebase.",
         ],
       },
       {
@@ -23,8 +37,9 @@ export const Team = () => {
         company: "NearbyGrocer",
         duration: "May 2020 - June 2020",
         description: [
-          "Built an e-commerce website using React Js and Redux architecture",
-          "Worked in close collaboration with a team of senior backend developers in integrating the APIs",
+          "Built an e-commerce website that satisfied the client's requirements with aresponsive design that enhanced the user experience.",
+          "Utilized industry-standard technologies, such as React and REDUX architecture, to build a reliable and functional website and pushed code to production.",
+          "Collaborated closely with designers to implement wireframes to improve the user interface. Worked together to balance design requirements with technical feasibility to achieve a visually appealing and user-friendly website.",
         ],
       },
     ],
@@ -107,12 +122,14 @@ export const Team = () => {
                                     </Col>
                                   </Row>
                                 </div>
-                                <div>
-                                  {job.description.map((line, i) => (
-                                    <p className="work-description" key={i}>
-                                      {line}
-                                    </p>
-                                  ))}
+                                <div style={{ width: "80%" }}>
+                                  <ul>
+                                    {job.description.map((line, i) => (
+                                      <li className="work-description" key={i}>
+                                        {line}
+                                      </li>
+                                    ))}
+                                  </ul>
                                 </div>
                               </div>
                             );
