@@ -9,6 +9,18 @@ export const Team = () => {
   const work = {
     internships: [
       {
+        title: "Software Information Systems and Management Associate",
+        company: "Retensa",
+        duration: "May 2023 - August 2023",
+        description: [
+          "Developed and optimized the frontend of the company's flagship revenue-generating product using jQuery, ColdFusion, serving over 1000 users.",
+          "Generated innovative ideas to elevate user experience, resulting in enhanced engagement and retention rates on the application.",
+          "Led end-to-end testing for new features, ensuring seamless integration and a high standard of quality in the application's functionality.",
+          "Identified and reported production code bugs to senior developers, showcasing meticulous attention to detail and commitment to software excellence.",
+          "Developed a streamlined CI/CD pipeline, automating deployment processes to significantly increase code release frequency and reliability.",
+        ],
+      },
+      {
         title: "Full Stack Web Developer Intern",
         company: "NYU IT",
         duration: "January 2023 - present",

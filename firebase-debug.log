@@ -1,0 +1,17 @@
+[debug] [2023-03-16T19:53:48.577Z] ----------------------------------------------------------------------
+[debug] [2023-03-16T19:53:48.578Z] Command:       /usr/bin/node /usr/bin/firebase projects:list
+[debug] [2023-03-16T19:53:48.579Z] CLI Version:   11.24.1
+[debug] [2023-03-16T19:53:48.579Z] Platform:      linux
+[debug] [2023-03-16T19:53:48.579Z] Node Version:  v16.19.1
+[debug] [2023-03-16T19:53:48.579Z] Time:          Thu Mar 16 2023 15:53:48 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-03-16T19:53:48.579Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-16T19:53:48.626Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-16T19:53:48.626Z] > authorizing via signed-in user (shvejan2011@gmail.com)
+[debug] [2023-03-16T19:53:48.629Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-03-16T19:54:18.630Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000
+[debug] [2023-03-16T19:54:18.631Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000
+    at RetryOperation._fn (/usr/lib/node_modules/firebase-tools/lib/apiv2.js:238:35)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
